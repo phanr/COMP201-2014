@@ -1,0 +1,78 @@
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+int main() 
+{
+	string something;
+cin >> something;
+
+if (something == "42")
+{
+	cout << "really? That's crazy!! << endl;
+}
+
+cout << something;
+
+}
+
+
+-Vectors are arrays that grow or shrink
+
+
+
+
+
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+
+vector <string> words;
+// Slurps in words from standard input
+// Ctrl-D if you're typing stuff in
+string word;
+
+while (cin >> word)
+if (word == "done")
+{
+words.push_back(word);
+}
+// Barf out words backwards 
+
+while (words.size() > 0) 
+{
+cout << words.back() << endl;
+words.pop_back();
+}
+
+}
+
+
+
+
+
+
+
+
+Example for Lab 2:
+
+
+5 3 - 4 8 * + // should return 34   
+
+
+
+
+
+
+
+
+
+
+
+
+
